@@ -30,7 +30,7 @@ export default function App() {
        >
         <Text style={styles.buttonText}>Searche</Text>
       </TouchableOpacity>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {books && books.map((book) => {
           return <BookItem  key={book.objectID} book={book}/>
         })}
