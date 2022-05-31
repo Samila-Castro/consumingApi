@@ -3,12 +3,13 @@ import { View, Text, StyleSheet } from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import Rating from './Rating';
 
 export default function BookItem({ book }){
   return(
     <View style={styles.content}>
       <View style={styles.wraper}>
-        <AntDesign name="user" size={20} color="blue" />
+        <AntDesign name="user" size={20} color="white" />
         <Text style={styles.item}>
           {book.author}
         </Text>
@@ -20,9 +21,10 @@ export default function BookItem({ book }){
         </Text>
       </View>
       <View style={styles.wraper}>
-        <EvilIcons name="link" size={20} color="white" />
+        <EvilIcons name="link" size={20} color="blue" />
         <Text style={styles.item}>{book.url}</Text>
       </View>
+      <Rating/>
     </View> 
   );
 };
@@ -36,7 +38,8 @@ const styles = StyleSheet.create({
   },
   wraper: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexWrap: 'wrap'
   },
   item: {
     color: '#fff',
