@@ -16,7 +16,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Searche for books</Text>
+      <Text style={styles.title}>Search for books</Text>
       <TextInput
         style={styles.input}
         placeholder="Books"
