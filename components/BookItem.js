@@ -9,7 +9,7 @@ export default function BookItem({ book }){
   return(
     <View style={styles.content}>
       <View style={styles.wraper}>
-        <AntDesign name="user" size={20} color="blue" />
+        <AntDesign name="user" size={20} color="white" />
         <Text style={styles.item}>
           {book.author}
         </Text>
@@ -21,7 +21,7 @@ export default function BookItem({ book }){
         </Text>
       </View>
       <View style={styles.wraper}>
-        <EvilIcons name="link" size={20} color="white" />
+        <EvilIcons name="link" size={20} color="blue" />
         <Text style={styles.item}>{book.url}</Text>
       </View>
       <Rating/>
