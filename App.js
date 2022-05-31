@@ -28,7 +28,7 @@ export default function App() {
         activeOpacity={0.8}
         onPress={handleSearche}
        >
-        <Text style={styles.buttonText}>Searche</Text>
+        <Text style={styles.buttonText}>Search</Text>
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>
         {books && books.map((book) => {
